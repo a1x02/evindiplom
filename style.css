@@ -54,7 +54,7 @@ html, body {
     flex-direction: row;
     border-bottom: .5px solid rgba(0, 0, 0, 0.2);
     position: relative;
-
+    text-decoration: none;
 }
 
 .sidebar__icon {
@@ -136,8 +136,15 @@ html, body {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
+}
+
+#time-table-end {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#time-table-end .time-table__item {
+    height: 60px;
 }
 
 .time-table__item {
@@ -192,12 +199,13 @@ html, body {
     color: #6C52FF;
     text-align: left;
     margin-right: 5%;
-    margin-top: 60px;
+    margin-top: 20px;
     height: 18px;
 }
 
 #start-time {
     width: 75%;
+    margin-top: 10px;
 }
 
 .input__container {
@@ -213,10 +221,23 @@ html, body {
     display: flex;
     width: 70%;
     position: relative;
-    margin: 40px auto 0;
+    margin: 20px auto 0;
     flex-direction: row;
 }
 
 .price__text {
     margin-left: 20px;
 }
+
+#price-text, #price-input {
+    margin-top: 20px;
+}
+
+#mode {
+    margin-top: 20px;
+}
+
+#save-button {
+    margin-top: 20px;
+}
+
